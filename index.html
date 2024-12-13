@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Disclosure (Show/Hide) Element (based on "Disclosure (Show/Hide) Pattern | APG | WAI | W3C")</title>
+</head>
+
+<body>
+    <main>
+        <h1>Disclosure (Show/Hide) Element (based on <a href="https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/">"Disclosure (Show/Hide) Pattern | APG | WAI | W3C"</a>)</h1>
+
+        <section
+            id="section--some-unique-id"
+            aria-labelledby="some-unique-id"
+            is="disclosure-show-hide-element"
+            data-expanded="true"
+        >
+            <h2
+                id="some-unique-id"
+                tabindex="-1"
+            >Some Heading</h2>
+
+            <p>Some content.</p>
+
+            <ul>
+                <li>Additional content.</li>
+
+                <li>In a list.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- A local copy of [WebReflection/custom-elements-builtin](https://github.com/WebReflection/custom-elements-builtin) -->
+    <script src="assets/js/webreflection-custom-elements-builtin-safari-polyfill.js"></script>
+
+    <script src="assets/js/custom-element-helpers.js"></script>
+
+    <script src="assets/js/disclosure-show-hide-element.js"></script>
+</body>
+</html>
